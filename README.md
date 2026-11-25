@@ -6,6 +6,9 @@ Built with **Claude tool use, Python, FastAPI, SQLite, Next.js and TypeScript**.
 
 > Demo video: _add your Loom link here_ · Live demo: _add your URL here_
 
+> **Production version:** the [Customer Support Agent Starter Kit](https://kimhoang36.gumroad.com/l/support-agent-kit?utm_source=github&utm_medium=readme&utm_campaign=support-agent) adds a team inbox where staff take over a chat, reply and hand it back, a `handoff_to_human` tool, an admin password, rate limits, a budget cap, a CSV help-article importer, Caddy HTTPS, and a one-command AWS deploy (about $0.05 per conversation).
+
+
 ## What it can do
 
 | Tool | What it does | Guardrail enforced in code |
@@ -118,6 +121,21 @@ Claude is mocked in tests, so they run offline in under a second.
 - Send tickets to the team's real helpdesk or to email, Zalo or Slack.
 - Move sessions from memory to Redis to run more than one server.
 - Add rate limiting and a stronger identity check (for example a one-time code by email) before exposing it publicly, because anyone with the link can use your Claude credits.
+
+## Free version vs the production kit
+
+This repo is the free, open-source version: great for learning and demos. The [Customer Support Agent Starter Kit](https://kimhoang36.gumroad.com/l/support-agent-kit?utm_source=github&utm_medium=readme&utm_campaign=support-agent) is the version you can put in front of real users or clients.
+
+| | This repo (free) | [Customer Support Agent Starter Kit](https://kimhoang36.gumroad.com/l/support-agent-kit?utm_source=github&utm_medium=readme&utm_campaign=support-agent) |
+|---|---|---|
+| Tool-using support agent and chat widget | ✅ | ✅ |
+| Team inbox: take over, reply, hand back, close |  | ✅ |
+| Human handoff tool and staff replies in the widget |  | ✅ |
+| Admin password, rate limit, budget cap with handoff |  | ✅ |
+| Cost log, CSV help-article importer |  | ✅ |
+| Caddy HTTPS, one-command AWS deploy |  | ✅ |
+
+More production-ready Claude projects: [all starter kits](https://shipready-ai.github.io/?utm_source=github&utm_medium=readme&utm_campaign=support-agent).
 
 ## License
 
